@@ -1,0 +1,321 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\blood\\footer.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\blood\\footer.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\LICENSE||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LICENSE||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\patient\\patient_dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\patient\\patient_dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\patient\\patientsignup.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\patient\\patientsignup.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\patient\\patientlogin.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\patient\\patientlogin.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\patient\\patientbase.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\patient\\patientbase.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\patient\\my_request.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\patient\\my_request.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\patient\\makerequest.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\patient\\makerequest.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\request_history.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\donor\\request_history.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\makerequest.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\donor\\makerequest.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\donor_dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\donor\\donor_dashboard.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\donorsignup.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\donor\\donorsignup.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\donorlogin.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\donor\\donorlogin.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\donorbase.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\donor\\donorbase.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\donation_history.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\donor\\donation_history.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\donate_blood.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:templates\\donor\\donate_blood.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{131369f2-062d-44a2-8671-91ff31efb4f4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "footer.html",
+              "DocumentMoniker": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\blood\\footer.html",
+              "RelativeDocumentMoniker": "templates\\blood\\footer.html",
+              "ToolTip": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\blood\\footer.html",
+              "RelativeToolTip": "templates\\blood\\footer.html",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-03T12:25:16.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAEAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-03-03T11:19:17.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LICENSE",
+              "DocumentMoniker": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\LICENSE",
+              "RelativeDocumentMoniker": "LICENSE",
+              "ToolTip": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\LICENSE",
+              "RelativeToolTip": "LICENSE",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-03-03T11:18:00.339Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "patient_dashboard.html",
+              "DocumentMoniker": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\patient\\patient_dashboard.html",
+              "RelativeDocumentMoniker": "templates\\patient\\patient_dashboard.html",
+              "ToolTip": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\patient\\patient_dashboard.html",
+              "RelativeToolTip": "templates\\patient\\patient_dashboard.html",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAAAEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-03T11:17:49.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "patientsignup.html",
+              "DocumentMoniker": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\patient\\patientsignup.html",
+              "RelativeDocumentMoniker": "templates\\patient\\patientsignup.html",
+              "ToolTip": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\patient\\patientsignup.html",
+              "RelativeToolTip": "templates\\patient\\patientsignup.html",
+              "ViewState": "AQIAAKsAAAAAAAAAAAAAALAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-03T11:17:40.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "patientlogin.html",
+              "DocumentMoniker": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\patient\\patientlogin.html",
+              "RelativeDocumentMoniker": "templates\\patient\\patientlogin.html",
+              "ToolTip": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\patient\\patientlogin.html",
+              "RelativeToolTip": "templates\\patient\\patientlogin.html",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAE0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-03T11:17:33.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "patientbase.html",
+              "DocumentMoniker": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\patient\\patientbase.html",
+              "RelativeDocumentMoniker": "templates\\patient\\patientbase.html",
+              "ToolTip": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\patient\\patientbase.html",
+              "RelativeToolTip": "templates\\patient\\patientbase.html",
+              "ViewState": "AQIAAMkAAAAAAAAAAAAAAM4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-03T11:17:21.708Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "my_request.html",
+              "DocumentMoniker": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\patient\\my_request.html",
+              "RelativeDocumentMoniker": "templates\\patient\\my_request.html",
+              "ToolTip": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\patient\\my_request.html",
+              "RelativeToolTip": "templates\\patient\\my_request.html",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-03T11:17:14.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "makerequest.html",
+              "DocumentMoniker": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\patient\\makerequest.html",
+              "RelativeDocumentMoniker": "templates\\patient\\makerequest.html",
+              "ToolTip": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\patient\\makerequest.html",
+              "RelativeToolTip": "templates\\patient\\makerequest.html",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAAAFEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-03T11:17:01.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "request_history.html",
+              "DocumentMoniker": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\request_history.html",
+              "RelativeDocumentMoniker": "templates\\donor\\request_history.html",
+              "ToolTip": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\request_history.html",
+              "RelativeToolTip": "templates\\donor\\request_history.html",
+              "ViewState": "AQIAADUAAAAAAAAAAAAAAD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-03T11:16:51.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "makerequest.html",
+              "DocumentMoniker": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\makerequest.html",
+              "RelativeDocumentMoniker": "templates\\donor\\makerequest.html",
+              "ToolTip": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\makerequest.html",
+              "RelativeToolTip": "templates\\donor\\makerequest.html",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAGMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-03T11:16:42.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "donor_dashboard.html",
+              "DocumentMoniker": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\donor_dashboard.html",
+              "RelativeDocumentMoniker": "templates\\donor\\donor_dashboard.html",
+              "ToolTip": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\donor_dashboard.html",
+              "RelativeToolTip": "templates\\donor\\donor_dashboard.html",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAAAEQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-03T11:16:30.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "donorsignup.html",
+              "DocumentMoniker": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\donorsignup.html",
+              "RelativeDocumentMoniker": "templates\\donor\\donorsignup.html",
+              "ToolTip": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\donorsignup.html",
+              "RelativeToolTip": "templates\\donor\\donorsignup.html",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAAAJcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-03T11:16:21.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "donorlogin.html",
+              "DocumentMoniker": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\donorlogin.html",
+              "RelativeDocumentMoniker": "templates\\donor\\donorlogin.html",
+              "ToolTip": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\donorlogin.html",
+              "RelativeToolTip": "templates\\donor\\donorlogin.html",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAEkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-03T11:16:13.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "donorbase.html",
+              "DocumentMoniker": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\donorbase.html",
+              "RelativeDocumentMoniker": "templates\\donor\\donorbase.html",
+              "ToolTip": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\donorbase.html",
+              "RelativeToolTip": "templates\\donor\\donorbase.html",
+              "ViewState": "AQIAAMkAAAAAAAAAAAAAAM4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-03T11:15:58.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "donation_history.html",
+              "DocumentMoniker": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\donation_history.html",
+              "RelativeDocumentMoniker": "templates\\donor\\donation_history.html",
+              "ToolTip": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\donation_history.html",
+              "RelativeToolTip": "templates\\donor\\donation_history.html",
+              "ViewState": "AQIAADkAAAAAAAAAAAAAAD4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-03T11:15:50.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "donate_blood.html",
+              "DocumentMoniker": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\donate_blood.html",
+              "RelativeDocumentMoniker": "templates\\donor\\donate_blood.html",
+              "ToolTip": "C:\\Users\\shuba\\OneDrive\\Desktop\\bloodbankmanagement-master\\templates\\donor\\donate_blood.html",
+              "RelativeToolTip": "templates\\donor\\donate_blood.html",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAFcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-03-03T11:15:40.43Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
