@@ -1,5 +1,5 @@
 # Blood Bank Management System
-edited by Shuba S (https://www.instagram.com/_shuba_.s?igsh=MWNoYzVjbWQ5cnliYg==)
+edited by Shuba S (https://www.instagram.com/_shuba_.s/)
 ### Admin
 - Create Admin account using following command
 ```
