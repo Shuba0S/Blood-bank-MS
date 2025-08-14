@@ -61,4 +61,4 @@ http://127.0.0.1:8000/
 
 ## Feedback
 Any suggestion and feedback is welcome. You can message me on instagram
-https://www.instagram.com/_shuba_.s?igsh=MWNoYzVjbWQ5cnliYg==
+https://www.instagram.com/_shuba_.s/
