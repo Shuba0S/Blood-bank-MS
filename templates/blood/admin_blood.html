@@ -1,15 +1,8 @@
 {% extends 'blood/adminbase.html' %}
 {% block content %}
 {% load widget_tweaks %}
-<style>
-            .xyz{
-      
-      display: table;
-      margin-right: auto;
-      margin-left: auto;
-            }
-</style>
-<br><br>
+
+<!--<br><br>
 <div class="container">
 
     <div class="row">
@@ -21,7 +14,7 @@
               </div><br><br>
               <div>
                   {{A1.unit}}
-              </div>                            
+              </div>
           </div>
         </div>
       </div>
@@ -33,7 +26,7 @@
                   </div><br><br>
                   <div>
                     {{B1.unit}}
-                  </div>                            
+                  </div>
               </div>
             </div>
       </div>
@@ -45,7 +38,7 @@
                   </div><br><br>
                   <div>
                     {{O1.unit}}
-                  </div>                            
+                  </div>
               </div>
             </div>
         </div>
@@ -57,7 +50,7 @@
                   </div><br><br>
                   <div>
                     {{AB1.unit}}
-                  </div>                            
+                  </div>
               </div>
             </div>
         </div>
@@ -72,7 +65,7 @@
               </div><br><br>
               <div>
                 {{A2.unit}}
-              </div>                            
+              </div>
           </div>
         </div>
       </div>
@@ -84,7 +77,7 @@
                   </div><br><br>
                   <div>
                     {{B2.unit}}
-                  </div>                            
+                  </div>
               </div>
             </div>
       </div>
@@ -96,7 +89,7 @@
                   </div><br><br>
                   <div>
                     {{O2.unit}}
-                  </div>                            
+                  </div>
               </div>
             </div>
         </div>
@@ -108,7 +101,7 @@
                   </div><br><br>
                   <div>
                     {{AB2.unit}}
-                  </div>                            
+                  </div>
               </div>
             </div>
         </div>
@@ -143,7 +136,96 @@
 </div>
 
 
+</div>-->
+<br>
+<br>
+<div class="container mx-auto px-6">
+
+    <!-- Blood Stock Section -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- A+ -->
+        <div class="bg-black shadow-lg rounded-lg p-6 text-center">
+            <h2 class="text-xl font-bold text-white">A+ <i class="fas fa-tint"></i></h2>
+            <p class="mt-6 text-white text-lg font-semibold">{{A1.unit}}</p>
+        </div>
+
+        <!-- B+ -->
+        <div class="bg-black shadow-lg rounded-lg p-6 text-center">
+            <h2 class="text-xl font-bold text-white">B+ <i class="fas fa-tint"></i></h2>
+            <p class="mt-6 text-white text-lg font-semibold">{{B1.unit}}</p>
+        </div>
+
+        <!-- O+ -->
+        <div class="bg-black shadow-lg rounded-lg p-6 text-center">
+            <h2 class="text-xl font-bold text-white">O+ <i class="fas fa-tint"></i></h2>
+            <p class="mt-6 text-white text-lg font-semibold">{{O1.unit}}</p>
+        </div>
+
+        <!-- AB+ -->
+        <div class="bg-black shadow-lg rounded-lg p-6 text-center">
+            <h2 class="text-xl font-bold text-white">AB+ <i class="fas fa-tint"></i></h2>
+            <p class="mt-6 text-white text-lg font-semibold">{{AB1.unit}}</p>
+        </div>
+
+        <!-- A- -->
+        <div class="bg-black shadow-lg rounded-lg p-6 text-center">
+            <h2 class="text-xl font-bold text-white">A- <i class="fas fa-tint"></i></h2>
+            <p class="mt-6 text-white text-lg font-semibold">{{A2.unit}}</p>
+        </div>
+
+        <!-- B- -->
+        <div class="bg-black shadow-lg rounded-lg p-6 text-center">
+            <h2 class="text-xl font-bold text-white">B- <i class="fas fa-tint"></i></h2>
+            <p class="mt-6 text-white text-lg font-semibold">{{B2.unit}}</p>
+        </div>
+
+        <!-- O- -->
+        <div class="bg-black shadow-lg rounded-lg p-6 text-center">
+            <h2 class="text-xl font-bold text-white">O- <i class="fas fa-tint"></i></h2>
+            <p class="mt-6 text-white text-lg font-semibold">{{O2.unit}}</p>
+        </div>
+
+        <!-- AB- -->
+        <div class="bg-black shadow-lg rounded-lg p-6 text-center">
+            <h2 class="text-xl font-bold text-white">AB- <i class="fas fa-tint"></i></h2>
+            <p class="mt-6 text-white text-lg font-semibold">{{AB2.unit}}</p>
+        </div>
+    </div>
+
+    <hr class="my-10 border-gray-300">
+
+    <!-- Update Blood Unit Form -->
+    <h3 class="text-center text-2xl font-bold mb-6">Update Blood Unit</h3>
+
+    <form method="POST" class="flex flex-col md:flex-row items-center justify-center gap-4">
+        {% csrf_token %}
+
+        <!-- Select Blood Group -->
+        <select name="bloodgroup" class="w-full md:w-1/4 border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-black">
+            <option disabled selected>Choose Blood Group</option>
+            <option >O+</option>
+            <option >O-</option>
+            <option >A+</option>
+            <option >A-</option>
+            <option >B+</option>
+            <option >B-</option>
+            <option >AB+</option>
+            <option >AB-</option>
+        </select>
+
+        <!-- Input Unit -->
+        <input type="number" name="unit" placeholder="Unit"
+               class="w-full md:w-1/4 border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-black">
+
+        <!-- Submit Button -->
+        <button type="submit"
+                class="bg-black hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md">
+            Update
+        </button>
+    </form>
+
 </div>
+
 
 
 {% endblock content %}

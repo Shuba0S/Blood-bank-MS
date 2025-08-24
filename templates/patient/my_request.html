@@ -3,21 +3,7 @@
 {% load widget_tweaks %}
 {%load static%}
 
-<head>
-    <style>
-        .label {
-     color: white;
-     padding: 8px;
-   }
-   
-   .success {background-color: #4CAF50;} /* Green */
-   .info {background-color: #2196F3;} /* Blue */
-   .warning {background-color: #ff9800;} /* Orange */
-   .danger {background-color: #f44336;} /* Red */
-   .other {background-color: #e7e7e7; color: black;} /* Gray */
-    </style>
-   </head>
-<br><br>
+<!--<br><br>
 <div class="container">
     <H4 class="text-center">My Blood Request</H4><br>
     <table class="table table-light table-hover table-bordered table-striped">
@@ -30,14 +16,14 @@
                 <th scope="col">Unit</th>
                 <th scope="col">Date</th>
                 <th scope="col">Status</th>
-                
+
             </tr>
         </thead>
         <tbody>
             {% for t in blood_request %}
             <tr>
                 <td> {{t.patient_name}}</td>
-                
+
                 <td>{{t.patient_age}}</td>
                 <td>{{t.reason}}</td>
                 <td>{{t.bloodgroup}}</td>
@@ -45,21 +31,79 @@
                 <td>{{t.date}}</td>
                 {% if t.status == 'Approved' %}
                 <td><span class="label warning"> Approved</span></td>
-                
+
                 {% elif t.status == 'Rejected' %}
                 <td><span class="label success">Rejected</span></td>
                 {% else %}
                 <td><span style="color: white;margin-left: 0px;" class="label info">Pending</span></td>
                 {% endif %}
-                
+
 
             </tr>
             {% endfor %}
 
         </tbody>
-    
+
     </table>
+</div>-->
+<br>
+<br>
+<div class="container mx-auto px-6">
+    <h4 class="text-center text-2xl font-bold mb-6 hover:scale-105">My Blood Request</h4>
+
+    <div class="overflow-x-auto shadow-md rounded-lg">
+        <table class="w-full border border-gray-300 text-sm text-left">
+            <!-- Table Head -->
+            <thead class="bg-black text-white">
+                <tr>
+                    <th scope="col" class="px-6 py-3 hover-handwriting">Patient Name</th>
+                    <th scope="col" class="px-6 py-3 hover-handwriting">Patient Age</th>
+                    <th scope="col" class="px-6 py-3 hover-handwriting">Reason</th>
+                    <th scope="col" class="px-6 py-3 hover-handwriting">Blood Group</th>
+                    <th scope="col" class="px-6 py-3 hover-handwriting">Unit</th>
+                    <th scope="col" class="px-6 py-3 hover-handwriting">Date</th>
+                    <th scope="col" class="px-6 py-3 hover-handwriting">Status</th>
+                </tr>
+            </thead>
+
+            <!-- Table Body -->
+            <tbody class="divide-y divide-gray-200">
+                {% for t in blood_request %}
+                <tr class="hover:bg-gray-100">
+                    <td class="px-6 py-4">{{t.patient_name}}</td>
+                    <td class="px-6 py-4">{{t.patient_age}}</td>
+                    <td class="px-6 py-4">{{t.reason}}</td>
+                    <td class="px-6 py-4">{{t.bloodgroup}}</td>
+                    <td class="px-6 py-4">{{t.unit}}</td>
+                    <td class="px-6 py-4">{{t.date}}</td>
+
+                    <!-- Status -->
+                    {% if t.status == 'Approved' %}
+                    <td class="px-6 py-4">
+                        <span class="px-3 py-1 rounded-full text-xs font-semibold bg-green-100 text-green-700">
+                            Approved
+                        </span>
+                    </td>
+                    {% elif t.status == 'Rejected' %}
+                    <td class="px-6 py-4">
+                        <span class="px-3 py-1 rounded-full text-xs font-semibold bg-red-100 text-red-700">
+                            Rejected
+                        </span>
+                    </td>
+                    {% else %}
+                    <td class="px-6 py-4">
+                        <span class="px-3 py-1 rounded-full text-xs font-semibold bg-yellow-100 text-yellow-700">
+                            Pending
+                        </span>
+                    </td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </div>
+
 
 
 {% endblock content %}

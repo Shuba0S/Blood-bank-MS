@@ -2,7 +2,7 @@
 {% block content %}
 {% load widget_tweaks %}
 {%load static%}
-<br><br>
+<!--<br><br>
 <div class="container">
     <H4 class="text-center">PATIENT DETAILS</H4><br>
     <table class="table table-light table-hover table-bordered table-striped">
@@ -26,7 +26,7 @@
                 <td>{{t.age}}</td>
                 <td>{{t.disease}}</td>
                 <td>{{t.mobile}}</td>
-                
+
                 <td class="text-right">
                     <button class="btn btn-primary badge-pill" style="width: 80px;"><a  style="text-decoration: none;color: white;" href="{% url 'update-patient' t.id  %}">EDIT</a> </button>
                     <button class="btn btn-danger badge-pill" style="width: 80px;"><a  style="text-decoration: none;color: white;" href="{% url 'delete-patient' t.id  %}">DELETE</a> </button>
@@ -35,9 +35,59 @@
             {% endfor %}
 
         </tbody>
-    
+
     </table>
+</div>-->
+<br>
+<br>
+<div class="container mx-auto px-6">
+    <h4 class="text-center text-2xl font-bold text-black mb-6 hover:scale-105">PATIENT DETAILS</h4>
+
+    <div class="overflow-x-auto shadow-lg rounded-lg">
+        <table class="min-w-full border border-gray-300 rounded-lg bg-white">
+            <!-- Table Head -->
+            <thead class="bg-black text-white">
+                <tr>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Name</th>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Profile</th>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Blood Group</th>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Age</th>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Disease</th>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Mobile</th>
+                    <th class="px-4 py-3 text-right hover-handwriting">Action</th>
+                </tr>
+            </thead>
+
+            <!-- Table Body -->
+            <tbody>
+                {% for t in patients %}
+                <tr class="hover:bg-gray-100 border-b">
+                    <td class="px-4 py-3">{{t.get_name}}</td>
+                    <td class="px-4 py-3">
+                        <img src="{% static t.profile_pic.url %}" alt="Profile Pic" class="h-10 w-10 rounded-full object-cover" />
+                    </td>
+                    <td class="px-4 py-3">{{t.bloodgroup}}</td>
+                    <td class="px-4 py-3">{{t.age}}</td>
+                    <td class="px-4 py-3">{{t.disease}}</td>
+                    <td class="px-4 py-3">{{t.mobile}}</td>
+
+                    <td class="px-4 py-3 text-right space-x-2">
+                        <a href="{% url 'update-patient' t.id %}"
+                           class="inline-block bg-black hover:bg-gray-100 text-white text-sm font-semibold px-4 py-2 rounded-full">
+                            EDIT
+                        </a>
+                        <a href="{% url 'delete-patient' t.id %}"
+                           class="inline-block bg-red-600 hover:bg-gray-100 text-white text-sm font-semibold px-4 py-2 rounded-full">
+                            DELETE
+                        </a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </div>
+
 
 
 {% endblock content %}

@@ -1,0 +1,33 @@
+.bg-image {
+    margin-bottom: 50px;
+    background-image: url('{% static "image/home.png" %}');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hover-handwriting:hover {
+    font-family: 'Lucida Handwriting', cursive;
+}
+
+.fa-tint {
+    color: red;
+}
+
+.fa-users {
+    color: black;
+    font-size: 3ex;
+}
+
+.fa-spinner {
+    color: black;
+    font-size: 3ex;
+}
+
+.fa-check-circle {
+    color:black;
+    font-size: 3ex;
+}
+
+.fa-sign-out-alt {
+    color: white;
+    font-size: 2ex;
+}

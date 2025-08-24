@@ -2,21 +2,8 @@
 {% block content %}
 {% load widget_tweaks %}
 {%load static%}
-<head>
-    <style>
-        .label {
-     color: white;
-     padding: 8px;
-   }
-   
-   .success {background-color: #4CAF50;} /* Green */
-   .info {background-color: #2196F3;} /* Blue */
-   .warning {background-color: #ff9800;} /* Orange */
-   .danger {background-color: #f44336;} /* Red */
-   .other {background-color: #e7e7e7; color: black;} /* Gray */
-    </style>
-   </head>
-<br><br>
+
+<!--<br><br>
 <div class="container">
     <H4 class="text-center">BLOOD DONATION DETAILS</H4><br>
     <table class="table table-light table-hover table-bordered table-striped">
@@ -51,15 +38,82 @@
                 <td><span class="label warning">{{t.unit}} Unit Added To Stock</span></td>
 
                 {% else %}
-                <td><span class="label danger">0 Unit Added To Stock</span></td> 
+                <td><span class="label danger">0 Unit Added To Stock</span></td>
                 {% endif %}
             </tr>
             {% endfor %}
 
         </tbody>
-    
+
     </table>
+</div>-->
+<br>
+<br>
+<div class="container mx-auto px-6">
+    <h4 class="text-center text-2xl font-bold text-black mb-6 hover:scale-105">BLOOD DONATION DETAILS</h4>
+
+    <div class="overflow-x-auto shadow-lg rounded-lg">
+        <table class="min-w-full border border-gray-300 rounded-lg bg-white">
+            <!-- Table Head -->
+            <thead class="bg-black text-white">
+                <tr>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Donor Name</th>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Disease</th>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Age</th>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Blood Group</th>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Unit</th>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Request Date</th>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Status</th>
+                    <th class="px-4 py-3 text-right hover-handwriting">Action</th>
+                </tr>
+            </thead>
+
+            <!-- Table Body -->
+            <tbody>
+                {% for t in donations %}
+                <tr class="hover:bg-gray-100 border-b">
+                    <td class="px-4 py-3">{{t.donor}}</td>
+                    <td class="px-4 py-3">{{t.disease}}</td>
+                    <td class="px-4 py-3">{{t.age}}</td>
+                    <td class="px-4 py-3">{{t.bloodgroup}}</td>
+                    <td class="px-4 py-3">{{t.unit}}</td>
+                    <td class="px-4 py-3">{{t.date}}</td>
+                    <td class="px-4 py-3 font-semibold
+                        {% if t.status == 'Approved' %} text-green-600
+                        {% elif t.status == 'Rejected' %} text-red-600
+                        {% else %} text-yellow-600 {% endif %}">
+                        {{t.status}}
+                    </td>
+
+                    {% if t.status == 'Pending' %}
+                    <td class="px-4 py-3 text-right space-x-2">
+                        <a href="{% url 'approve-donation' t.id %}"
+                           class="inline-block bg-green hover:bg-gray-100 text-white text-sm font-semibold px-4 py-2 rounded-full">
+                            APPROVE
+                        </a>
+                        <a href="{% url 'reject-donation' t.id %}"
+                           class="inline-block bg-red-600 hover:bg-gray-100 text-white text-sm font-semibold px-4 py-2 rounded-full">
+                            REJECT
+                        </a>
+                    </td>
+
+                    {% elif t.status == 'Approved' %}
+                    <td class="px-4 py-3 text-green-600 font-semibold">
+                        {{t.unit}} Unit Added To Stock
+                    </td>
+
+                    {% else %}
+                    <td class="px-4 py-3 text-red-600 font-semibold">
+                        0 Unit Added To Stock
+                    </td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </div>
+
 
 
 {% endblock content %}

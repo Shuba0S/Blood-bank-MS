@@ -2,22 +2,9 @@
 {% block content %}
 {% load widget_tweaks %}
 {%load static%}
-<head>
-    <style>
-        .label {
-     color: white;
-     padding: 8px;
-   }
-   
-   .success {background-color: #4CAF50;} /* Green */
-   .info {background-color: #2196F3;} /* Blue */
-   .warning {background-color: #ff9800;} /* Orange */
-   .danger {background-color: #f44336;} /* Red */
-   .other {background-color: #e7e7e7; color: black;} /* Gray */
-    </style>
-   </head>
-<br><br>
-<div class="container">
+
+
+<!--<div class="container">
     <H4 class="text-center">My Blood Request</H4><br>
     <table class="table table-light table-hover table-bordered table-striped">
         <thead class="bg-info">
@@ -29,14 +16,14 @@
                 <th scope="col">Unit</th>
                 <th scope="col">Date</th>
                 <th scope="col">Status</th>
-                
+
             </tr>
         </thead>
         <tbody>
             {% for t in blood_request %}
             <tr>
                 <td> {{t.patient_name}}</td>
-                
+
                 <td>{{t.patient_age}}</td>
                 <td>{{t.reason}}</td>
                 <td>{{t.bloodgroup}}</td>
@@ -44,20 +31,77 @@
                 <td>{{t.date}}</td>
                 {% if t.status == 'Approved' %}
                 <td><span class="label warning"> Approved</span></td>
-                
+
                 {% elif t.status == 'Rejected' %}
                 <td><span class="label success">Rejected</span></td>
                 {% else %}
                 <td><span style="color: white;margin-left: 0px;" class="label info">Pending</span></td>
                 {% endif %}
-                
+
 
             </tr>
             {% endfor %}
 
         </tbody>
-    
+
     </table>
+</div>-->
+<div class="min-h-screen bg-gray-100 py-12 px-60">
+    <div class="w-full bg-white shadow-lg rounded-2xl p-8">
+
+        <!-- Heading -->
+        <div class="border-b pb-4 mb-6">
+            <h2 class="text-2xl font-bold  text-black text-center">DONATE BLOOD</h2>
+        </div>
+
+        <!-- Form -->
+        <form method="POST" autocomplete="off" enctype="multipart/form-data" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {% csrf_token %}
+
+            <!-- Blood Group -->
+            <div class="col-span-1">
+                <label class="block text-sm font-semibold mb-2">Blood Group</label>
+                <select name="bloodgroup" required
+                        class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-black focus:outline-none">
+                    <option disabled selected>Choose option</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                </select>
+            </div>
+
+            <!-- Unit -->
+            <div class="col-span-1">
+                <label class="block text-sm font-semibold mb-2">Unit (in ml)</label>
+                {% render_field donation_form.unit|attr:"required:true" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:outline-none" %}
+            </div>
+
+            <!-- Disease -->
+            <div class="col-span-1">
+                <label class="block text-sm font-semibold mb-2">Disease (if any)</label>
+                {% render_field donation_form.disease|attr:"required:true" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:outline-none" %}
+            </div>
+
+            <!-- Age -->
+            <div class="col-span-1">
+                <label class="block text-sm font-semibold mb-2">Age</label>
+                {% render_field donation_form.age|attr:"required:true" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black focus:outline-none" %}
+            </div>
+
+            <!-- Submit Button -->
+            <div class="col-span-1 md:col-span-2 flex justify-center">
+                <button type="submit"
+                        class="bg-black text-white font-semibold px-8 py-3 rounded-lg shadow hover:bg-gray-800 transition">
+                    DONATE
+                </button>
+            </div>
+        </form>
+    </div>
 </div>
 
 

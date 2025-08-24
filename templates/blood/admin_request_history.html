@@ -3,20 +3,36 @@
 {% load widget_tweaks %}
 {%load static%}
 <head>
- <style>
-     .label {
-  color: white;
-  padding: 8px;
-}
+    <style>
+        .label {
+            color: white;
+            padding: 8px;
+        }
 
-.success {background-color: #4CAF50;} /* Green */
-.info {background-color: #2196F3;} /* Blue */
-.warning {background-color: #ff9800;} /* Orange */
-.danger {background-color: #f44336;} /* Red */
-.other {background-color: #e7e7e7; color: black;} /* Gray */
- </style>
+        .success {
+            background-color: #4CAF50;
+        }
+        /* Green */
+        .info {
+            background-color: #2196F3;
+        }
+        /* Blue */
+        .warning {
+            background-color: #ff9800;
+        }
+        /* Orange */
+        .danger {
+            background-color: #f44336;
+        }
+        /* Red */
+        .other {
+            background-color: #e7e7e7;
+            color: black;
+        }
+        /* Gray */
+    </style>
 </head>
-<br><br>
+<!--<br><br>
 <div class="container">
     <H4 class="text-center">Blood Request History</H4><br>
     {% if message %}
@@ -29,14 +45,14 @@
             <tr>
                 <th scope="col">Patient Name</th>
                 <th scope="col">Age</th>
-                
+
                 <th scope="col">Reason</th>
                 <th scope="col">Blood Group</th>
                 <th scope="col">Unit (in ml)</th>
                 <th scope="col">Date</th>
                 <th scope="col">Status</th>
                 <th scope="col">Stock Status</th>
-               
+
             </tr>
         </thead>
         <tbody>
@@ -44,8 +60,8 @@
             <tr>
                 <td> {{t.patient_name}}</td>
                 <td>{{t.patient_age}}</td>
-                
-                
+
+
                 <td>{{t.reason}}</td>
                 <td>{{t.bloodgroup}}</td>
                 <td>{{t.unit}}</td>
@@ -57,16 +73,66 @@
                 <td><span class="label success">Rejected</span></td>
                 <td><span class="label success"> 0 Unit Deducted From Stock</span></td>
                 {% endif %}
-                
-                
-            
+
+
+
             </tr>
             {% endfor %}
 
         </tbody>
-    
+
     </table>
+</div>-->
+<br>
+<br>
+<div class="container mx-auto px-6">
+    <h4 class="text-center text-2xl font-bold text-black mb-6 hover:scale-105">BLOOD REQUEST HISTORY</h4>
+
+    {% if message %}
+    <h5 class="text-center text-red-600 text-lg font-semibold mb-4">{{message}}</h5>
+    {% endif %}
+
+    <div class="overflow-x-auto shadow-lg rounded-lg">
+        <table class="min-w-full border border-gray-300 rounded-lg bg-white">
+            <!-- Table Head -->
+            <thead class="bg-black text-white">
+                <tr>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Patient Name</th>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Age</th>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Reason</th>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Blood Group</th>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Unit (in ml)</th>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Date</th>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Status</th>
+                    <th scope="col" class="px-4 py-3 text-left hover-handwriting">Stock Status</th>
+                </tr>
+            </thead>
+
+            <!-- Table Body -->
+            <tbody>
+                {% for t in requests %}
+                <tr class="hover:bg-gray-100 border-b">
+                    <td class="px-4 py-3">{{t.patient_name}}</td>
+                    <td class="px-4 py-3">{{t.patient_age}}</td>
+                    <td class="px-4 py-3">{{t.reason}}</td>
+                    <td class="px-4 py-3">{{t.bloodgroup}}</td>
+                    <td class="px-4 py-3">{{t.unit}}</td>
+                    <td class="px-4 py-3">{{t.date}}</td>
+
+                    {% if t.status == 'Approved' %}
+                    <td class="px-4 py-3 font-semibold text-green-600">Approved</td>
+                    <td class="px-4 py-3 text-yellow-600 font-medium">{{t.unit}} Unit Deducted From Stock</td>
+                    {% else %}
+                    <td class="px-4 py-3 font-semibold text-red-600">Rejected</td>
+                    <td class="px-4 py-3 text-gray-500 font-medium">0 Unit Deducted From Stock</td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </div>
+
 
 
 {% endblock content %}

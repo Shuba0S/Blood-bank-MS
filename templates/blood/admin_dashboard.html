@@ -1,6 +1,6 @@
 {% extends 'blood/adminbase.html' %}
 {% block content %}
-<br><br>
+<!--<br><br>
 <div class="container">
 
     <div class="row">
@@ -12,7 +12,7 @@
                 </div><br><br>
                 <div>
                     {{A1.unit}}
-                </div>                            
+                </div>
             </div>
           </div>
         </div>
@@ -24,7 +24,7 @@
                     </div><br><br>
                     <div>
                       {{B1.unit}}
-                    </div>                            
+                    </div>
                 </div>
               </div>
         </div>
@@ -36,7 +36,7 @@
                     </div><br><br>
                     <div>
                       {{O1.unit}}
-                    </div>                            
+                    </div>
                 </div>
               </div>
           </div>
@@ -48,12 +48,12 @@
                     </div><br><br>
                     <div>
                       {{AB1.unit}}
-                    </div>                            
+                    </div>
                 </div>
               </div>
           </div>
       </div>
-  
+
       <div class="row">
         <div class="col-sm-3">
           <div class="card bg-light">
@@ -63,7 +63,7 @@
                 </div><br><br>
                 <div>
                   {{A2.unit}}
-                </div>                            
+                </div>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@
                     </div><br><br>
                     <div>
                       {{B2.unit}}
-                    </div>                            
+                    </div>
                 </div>
               </div>
         </div>
@@ -87,7 +87,7 @@
                     </div><br><br>
                     <div>
                       {{O2.unit}}
-                    </div>                            
+                    </div>
                 </div>
               </div>
           </div>
@@ -99,7 +99,7 @@
                     </div><br><br>
                     <div>
                       {{AB2.unit}}
-                    </div>                            
+                    </div>
                 </div>
               </div>
           </div>
@@ -115,7 +115,7 @@
               <div>
                   Total Donors <br>
                   {{totaldonors}}
-              </div>                            
+              </div>
           </div>
         </div>
       </div>
@@ -128,7 +128,7 @@
                   <div>
                       Total Requests <br>
                      {{totalrequest}}
-                  </div>                            
+                  </div>
               </div>
             </div>
       </div>
@@ -141,7 +141,7 @@
                   <div>
                       Approved Requests <br>
                       {{totalapprovedrequest}}
-                  </div>                            
+                  </div>
               </div>
             </div>
         </div>
@@ -154,12 +154,151 @@
                   <div>
                       Total Blood Unit (in ml) <br>
                       {{totalbloodunit}}
-                  </div>                            
+                  </div>
               </div>
             </div>
         </div>
     </div>
-</div>
+</div>-->
+
+<section class="container mx-auto px-6 py-8">
+    <!-- Blood Groups Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+        <!-- A+ -->
+        <div class="bg-white shadow-md rounded-xl p-4 border border-gray-300">
+            <h2 class="text-xl font-bold text-black pl-2">
+                A+ 
+            </h2>
+            <div class="mt-4 text-lg font-semibold text-black pl-2">
+                {{A1.unit}}
+            </div>
+        </div>
+
+        <!-- B+ -->
+        <div class="bg-white shadow-md rounded-xl p-4 border border-gray-300">
+            <h2 class="text-xl font-bold text-black pl-2">
+                B+ 
+            </h2>
+            <div class="mt-4 text-lg font-semibold text-black pl-2">
+                {{B1.unit}}
+            </div>
+        </div>
+
+        <!-- O+ -->
+        <div class="bg-white shadow-md rounded-xl p-4 border border-gray-300">
+            <h2 class="text-xl font-bold text-black pl-2">
+                O+ 
+            </h2>
+            <div class="mt-4 text-lg font-semibold text-black pl-2">
+                {{O1.unit}}
+            </div>
+        </div>
+
+        <!-- AB+ -->
+        <div class="bg-white shadow-md rounded-xl p-4 border border-gray-300">
+            <h2 class="text-xl font-bold text-black pl-2">
+                AB+ 
+            </h2>
+            <div class="mt-4 text-lg font-semibold text-black pl-2">
+                {{AB1.unit}}
+            </div>
+        </div>
+
+        <!-- A- -->
+        <div class="bg-white shadow-md rounded-xl p-4 border border-gray-300">
+            <h2 class="text-xl font-bold text-black pl-2">
+                A- 
+            </h2>
+            <div class="mt-4 text-lg font-semibold text-black pl-2">
+                {{A2.unit}}
+            </div>
+        </div>
+
+        <!-- B- -->
+        <div class="bg-white shadow-md rounded-xl p-4 border border-gray-300">
+            <h2 class="text-xl font-bold text-black pl-2">
+                B- 
+            </h2>
+            <div class="mt-4 text-lg font-semibold text-black pl-2">
+                {{B2.unit}}
+            </div>
+        </div>
+
+        <!-- O- -->
+        <div class="bg-white shadow-md rounded-xl p-4 border border-gray-300">
+            <h2 class="text-xl font-bold text-black pl-2">
+                O- 
+            </h2>
+            <div class="mt-4 text-lg font-semibold text-black pl-2">
+                {{O2.unit}}
+            </div>
+        </div>
+
+        <!-- AB- -->
+        <div class="bg-white shadow-md rounded-xl p-4 border border-gray-300">
+            <h2 class="text-xl font-bold text-black pl-2">
+                AB- 
+            </h2>
+            <div class="mt-4 text-lg font-semibold text-black pl-2">
+                {{AB2.unit}}
+            </div>
+        </div>
+
+    </div>
+
+    <hr class="my-10 border-gray-400">
+
+    <!-- Stats Section -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+
+        <!-- Total Donors -->
+        <div class="bg-white shadow-md rounded-xl p-4 border border-gray-300">
+            <h2 class="text-xl font-bold text-black pl-2">
+                
+            </h2>
+            <div class="mt-4 text-lg font-semibold text-black pl-2">
+                Total Donors <br>
+                {{totaldonors}}
+            </div>
+        </div>
+
+        <!-- Total Requests -->
+        <div class="bg-white shadow-md rounded-xl p-4 border border-gray-300">
+            <h2 class="text-xl font-bold text-black pl-2">
+                
+            </h2>
+            <div class="mt-4 text-lg font-semibold text-black pl-2">
+                Total Requests <br>
+                {{totalrequest}}
+            </div>
+        </div>
+
+        <!-- Approved Requests -->
+        <div class="bg-white shadow-md rounded-xl p-4 border border-gray-300">
+            <h2 class="text-xl font-bold text-black pl-2">
+                
+            </h2>
+            <div class="mt-4 text-lg font-semibold text-black pl-2">
+                Approved Requests <br>
+                {{totalapprovedrequest}}
+            </div>
+        </div>
+
+        <!-- Total Blood Units -->
+        <div class="bg-white shadow-md rounded-xl p-4 border border-gray-300">
+            <h2 class="text-xl font-bold text-black pl-2">
+                
+            </h2>
+            <div class="mt-4 text-lg font-semibold text-black pl-2">
+                Total Blood Unit (in ml) <br>
+                {{totalbloodunit}}
+            </div>
+        </div>
+
+    </div>
+</section>
+
 
 
 {% endblock content %}

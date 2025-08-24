@@ -3,20 +3,10 @@
 {% load widget_tweaks %}
 {%load static%}
 <head>
-    <style>
-        .label {
-     color: white;
-     padding: 8px;
-   }
-   
-   .success {background-color: #4CAF50;} /* Green */
-   .info {background-color: #2196F3;} /* Blue */
-   .warning {background-color: #ff9800;} /* Orange */
-   .danger {background-color: #f44336;} /* Red */
-   .other {background-color: #e7e7e7; color: black;} /* Gray */
-    </style>
-   </head>
-<br><br>
+    <link rel="stylesheet" href="{% static 'css/output.css' %}">
+    <link rel="stylesheet" href="{% static 'css/manual.css' %}">
+</head>
+<!--<br><br>
 <div class="container">
     <H4 class="text-center">My Donation History</H4><br>
     <table class="table table-light table-hover table-bordered table-striped">
@@ -28,37 +18,88 @@
                 <th scope="col">Unit</th>
                 <th scope="col">Date</th>
                 <th scope="col">Status</th>
-                
+
             </tr>
         </thead>
         <tbody>
             {% for t in donations %}
             <tr>
-                
-                
+
+
                 <td>{{t.age}}</td>
                 <td> {{t.disease}}</td>
-                
+
                 <td>{{t.bloodgroup}}</td>
                 <td>{{t.unit}}</td>
                 <td>{{t.date}}</td>
                 {% if t.status == 'Approved' %}
                 <td><span class="label warning"> Approved</span></td>
-                
+
                 {% elif t.status == 'Rejected' %}
                 <td><span class="label success">Rejected</span></td>
                 {% else %}
                 <td><span style="color: white;margin-left: 0px;" class="label info">Pending</span></td>
                 {% endif %}
-                
+
 
             </tr>
             {% endfor %}
 
         </tbody>
-    
+
     </table>
+</div>-->
+<br />
+<div class="container mx-auto px-6 py-10">
+    <!-- Heading -->
+    <h4 class="text-center text-4xl font-bold text-black mb-6 hover:scale-105">My Donation History</h4>
+
+    <!-- Table -->
+    <div class="overflow-x-auto bg-black shadow-lg rounded-2xl">
+        <table class="w-full text-left border-collapse">
+            <!-- Table Head -->
+            <thead class="bg-black text-white">
+                <tr>
+                    <th class="px-7 py-3 hover-handwriting">Donor Age</th>
+                    <th class="px-6 py-3 hover-handwriting">Disease (if any)</th>
+                    <th class="px-6 py-3 hover-handwriting">Blood Group</th>
+                    <th class="px-6 py-3 hover-handwriting">Unit</th>
+                    <th class="px-6 py-3 hover-handwriting">Date</th>
+                    <th class="px-6 py-3 hover-handwriting">Status</th>
+                </tr>
+            </thead>
+
+            <!-- Table Body -->
+            <tbody class="divide-y divide-gray-200">
+                {% for t in donations %}
+                <tr class="hover:bg-gray-100">
+                    <td class="px-6 py-3 text-black">{{t.age}}</td>
+                    <td class="px-6 py-3 text-black">{{t.disease}}</td>
+                    <td class="px-6 py-3 text-black">{{t.bloodgroup}}</td>
+                    <td class="px-6 py-3 text-black">{{t.unit}}</td>
+                    <td class="px-6 py-3 text-black">{{t.date}}</td>
+
+                    <!-- Status -->
+                    {% if t.status == 'Approved' %}
+                    <td class="px-6 py-3">
+                        <span class="px-3 py-1 text-sm rounded-lg bg-green-600 text-white">Approved</span>
+                    </td>
+                    {% elif t.status == 'Rejected' %}
+                    <td class="px-6 py-3">
+                        <span class="px-3 py-1 text-sm rounded-lg bg-red-600 text-white">Rejected</span>
+                    </td>
+                    {% else %}
+                    <td class="px-6 py-3">
+                        <span class="px-3 py-1 text-sm rounded-lg bg-yellow-500 text-white">Pending</span>
+                    </td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 </div>
+
 
 
 {% endblock content %}

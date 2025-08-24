@@ -1,44 +1,28 @@
 {% load static %}
 <!DOCTYPE html>
-
 <head>
-    <style>
-        .xyz{
-          margin-bottom: 50px;
-          background-image: url('{% static "image/home.png" %}');
-          background-size: cover;
-          background-repeat: no-repeat;
-        }
-      </style>
-      
 </head>
-
-
 <body>
-  {% include "blood/navbar.html" %}
-<br>
-<section id="section-jumbotron" style="margin-bottom: 0px;" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center xyz">
-    <div class="container text-center">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-     
-      
-      <br><br><br><br>
-      
-    </div>  
-  </section>
-
-
-  <div class="jumbotron" style="margin-top: 0px;margin-bottom: 0px;">
-
-    <p class="lead text-center">“Opportunities knock the door sometimes, so don’t let it go and donate blood.”
-      </p>
-    
-    <p class="text-center">- LazyCoder</p>
-    
-  </div>
-  {% include "blood/footer.html" %}
-
-
+    {% include "blood/navbar.html" %}
+    <main class="flex-grow p-6 space-y-6 pt-28 bg-[url('/static/image/home.png')] bg-cover bg-center bg-no-repeat flex flex-col items-end">
+        <section class="bg-white hover:scale-105 p-6 rounded-2xl shadow-lg w-1/2 text-left">
+            <h2 class="text-2xl underline decorative-black hover:italic font-semibold">Welcome</h2>
+            <p class="hover:italic">Welcome to the Blood Bank Management System. This platform simplifies the process of managing blood donations and inventory while connecting donors with recipients. Our goal is to ensure a smooth and efficient donation experience for all.</p>
+        </section>
+        <section class="bg-white hover:scale-105 p-6 rounded-2xl shadow-lg w-1/2 text-left">
+            <h2 class="text-2xl underline decorative-black font-semibold hover:italic">Features</h2>
+            <ul class="hover:italic list-disc list-inside">
+                <li>Donor Registration</li>
+                <li>Blood Stock Tracking</li>
+                <li>Recipient Management</li>
+            </ul>
+        </section>
+        <section class="bg-white hover:scale-105 p-6 rounded-2xl shadow-lg w-1/2 text-left">
+            <h2 class="text-2xl underline decorative-black font-semibold hover:italic">About Me</h2>
+            <p class="hover:italic">I am a recent graduate and aspiring Python Full Stack Developer with skills in Django and Tailwind CSS. I enjoy building practical web applications and writing clean, efficient code. My goal is to grow as a developer while creating impactful software solutions.</p>
+        </section>
+    </main>
+    {% include "blood/footer.html" %}
 </body>
 
 </html>

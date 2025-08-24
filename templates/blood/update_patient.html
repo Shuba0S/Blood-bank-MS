@@ -1,18 +1,11 @@
 {% extends 'blood/adminbase.html' %}
-{% block content %}
+
 {% load widget_tweaks %}
 {%load static%}
-<head>
-        <!-- Font special for pages-->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-
-        <!-- Main CSS-->
-    
-        <link href="{% static "css/main.css" %}"rel="stylesheet" media="all">
-</head>
-<div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+{% block content %}
+<!--<div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
     <div class="wrapper wrapper--w790">
-      
+
         <div class="card card-5">
             <div class="card-heading">
                 <h2 class="title">Update Patient</h2>
@@ -142,11 +135,112 @@
                     </div>
                 </form>
                 <br>
-                
+
 
             </div>
         </div>
     </div>
+</div>-->
+<div class="min-h-screen bg-white flex justify-center items-center py-10">
+    <div class="w-full max-w-3xl bg-white shadow-xl rounded-xl border border-black">
+
+        <!-- Header -->
+        <div class="bg-black text-white text-center py-4 rounded-t-xl">
+            <h2 class="text-2xl font-bold">Update Patient</h2>
+        </div>
+
+        <!-- Body -->
+        <div class="p-8">
+            <form method="POST" autocomplete="off" enctype="multipart/form-data" class="space-y-6">
+                {% csrf_token %}
+
+                <!-- First Name -->
+                <div>
+                    <label class="block text-black font-semibold mb-2">First Name</label>
+                    {% render_field userForm.first_name|attr:'required:true' class="w-full border border-black rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black" %}
+                </div>
+
+                <!-- Last Name -->
+                <div>
+                    <label class="block text-black font-semibold mb-2">Last Name</label>
+                    {% render_field userForm.last_name|attr:'required:true' class="w-full border border-black rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black" %}
+                </div>
+
+                <!-- Username -->
+                <div>
+                    <label class="block text-black font-semibold mb-2">Username</label>
+                    {% render_field userForm.username|attr:'required:true' class="w-full border border-black rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black" %}
+                </div>
+
+                <!-- Password -->
+                <div>
+                    <label class="block text-black font-semibold mb-2">Password</label>
+                    {% render_field userForm.password|attr:'required:true' class="w-full border border-black rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black" %}
+                </div>
+
+                <!-- Age -->
+                <div>
+                    <label class="block text-black font-semibold mb-2">Age</label>
+                    {% render_field patientForm.age|attr:'required:true' class="w-full border border-black rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black" %}
+                </div>
+
+                <!-- Blood Group -->
+                <div>
+                    <label class="block text-black font-semibold mb-2">Blood Group</label>
+                    <select name="bloodgroup" class="w-full border border-black rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black">
+                        <option disabled selected>Choose option</option>
+                        <option>O+</option>
+                        <option>O-</option>
+                        <option>A+</option>
+                        <option>A-</option>
+                        <option>B+</option>
+                        <option>B-</option>
+                        <option>AB+</option>
+                        <option>AB-</option>
+                    </select>
+                </div>
+
+                <!-- Disease -->
+                <div>
+                    <label class="block text-black font-semibold mb-2">Disease (if any)</label>
+                    {% render_field patientForm.disease|attr:'required:true' class="w-full border border-black rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black" %}
+                </div>
+
+                <!-- Doctor -->
+                <div>
+                    <label class="block text-black font-semibold mb-2">Doctor</label>
+                    {% render_field patientForm.doctorname|attr:'required:true' class="w-full border border-black rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black" %}
+                </div>
+
+                <!-- Address -->
+                <div>
+                    <label class="block text-black font-semibold mb-2">Address</label>
+                    {% render_field patientForm.address|attr:'required:true' class="w-full border border-black rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black" %}
+                </div>
+
+                <!-- Mobile -->
+                <div>
+                    <label class="block text-black font-semibold mb-2">Mobile</label>
+                    {% render_field patientForm.mobile|attr:'required:true' class="w-full border border-black rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black" %}
+                </div>
+
+                <!-- Profile Pic -->
+                <div>
+                    <label class="block text-black font-semibold mb-2">Profile Pic</label>
+                    {% render_field patientForm.profile_pic|attr:'required:true' class="w-full border border-black rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black file:mr-3 file:py-2 file:px-4 file:border-0 file:bg-black file:text-white hover:file:bg-gray-800 cursor-pointer" %}
+                </div>
+
+                <!-- Submit -->
+                <div class="text-center">
+                    <button type="submit" class="bg-black text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition">
+                        Update
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
 </div>
+
 
 {% endblock content %}

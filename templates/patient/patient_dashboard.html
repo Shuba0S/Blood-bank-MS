@@ -1,17 +1,9 @@
 {% extends 'patient/patientbase.html' %}
 {% block content %}
-<head>
-    <style>
-            .xyz{     
-        color: blue; 
-        font-size: 3ex;   
-    }
-    </style>
-</head>
-<br><br>
-<div class="container">
 
- 
+<!--<div class="container">
+
+
     <div class="row">
       <div class="col-sm-3">
         <div class="card bg-light">
@@ -22,7 +14,7 @@
               <div>
                 Request Made <br>
                   {{requestmade}}
-              </div>                            
+              </div>
           </div>
         </div>
       </div>
@@ -36,7 +28,7 @@
                 <div>
                     Pending Request <br>
                     {{requestpending}}
-                </div>                            
+                </div>
             </div>
           </div>
       </div>
@@ -50,7 +42,7 @@
                   <div>
                        Approved Request<br>
                       {{requestapproved}}
-                  </div>                            
+                  </div>
               </div>
             </div>
       </div>
@@ -63,13 +55,55 @@
                   <div>
                        Rejected Request <br>
                       {{requestrejected}}
-                  </div>                            
+                  </div>
               </div>
             </div>
         </div>
 
     </div>
+</div>-->
+<div class="container mx-auto px-6 py-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- Request Made -->
+        <div class="bg-white border border-black shadow-md rounded-xl p-6 flex flex-col items-center text-center">
+            <div class="text-3xl text-black mb-3">
+                <i class="fas fa-sync-alt"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-black">Request Made</h3>
+            <p class="text-xl font-bold text-black mt-1">{{requestmade}}</p>
+        </div>
+
+        <!-- Pending Request -->
+        <div class="bg-white border border-black shadow-md rounded-xl p-6 flex flex-col items-center text-center">
+            <div class="text-3xl text-black mb-3">
+                <i class="fas fa-sync"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-black">Pending Request</h3>
+            <p class="text-xl font-bold text-black mt-1">{{requestpending}}</p>
+        </div>
+
+        <!-- Approved Request -->
+        <div class="bg-white border border-black shadow-md rounded-xl p-6 flex flex-col items-center text-center">
+            <div class="text-3xl text-black mb-3">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-black">Approved Request</h3>
+            <p class="text-xl font-bold text-black mt-1">{{requestapproved}}</p>
+        </div>
+
+        <!-- Rejected Request -->
+        <div class="bg-white border border-black shadow-md rounded-xl p-6 flex flex-col items-center text-center">
+            <div class="text-3xl text-black mb-3">
+                <i class="fas fa-times-circle"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-black">Rejected Request</h3>
+            <p class="text-xl font-bold text-black mt-1">{{requestrejected}}</p>
+        </div>
+
+    </div>
 </div>
+
 
 
 {% endblock content %}

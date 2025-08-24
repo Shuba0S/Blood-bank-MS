@@ -1,16 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\static",
-    "\\static\\css",
-    "\\static\\profile_pic",
-    "\\static\\profile_pic\\Donor",
-    "\\static\\profile_pic\\Patient",
-    "\\static\\vendor",
-    "\\static\\vendor\\select2",
+    "\\blood",
+    "\\bloodbankmanagement",
+    "\\donor",
+    "\\patient",
+    "\\tailwind",
+    "\\tailwind\\src",
     "\\templates",
+    "\\templates\\donor",
     "\\templates\\patient"
   ],
-  "SelectedNode": "\\templates\\blood\\footer.html",
+  "SelectedNode": "\\templates\\patient\\makerequest.html",
   "PreviewInSolutionExplorer": false
 }
