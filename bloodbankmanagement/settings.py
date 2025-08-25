@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'bloodbankmanagement.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': os.getenv("ENGINE"),
+        'NAME': os.getenv("NAME"),
+        'USER': os.getenv("USER"),
+        'HOST': os.getenv("HOST"),
+        'PASSWORD': os.getenv("PASSWORD"),
+        'PORT': os.getenv("PORT"),
     }
 }
 
