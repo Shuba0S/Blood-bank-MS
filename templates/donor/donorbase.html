@@ -12,35 +12,6 @@
     <link rel="icon" type="image/x-icon" href="{% static 'image/favicon.ico' %}">
 </head>
 <body>
-
-    <!--<nav class="navbar navbar-expand-lg navbar-light fixed-top bg-danger">
-        <a style="color:white;" class="navbar-brand" href="/"><i class="fab fa-gratipay"></i>&nbsp;<font face="Comic sans MS" size="4">Blood Bank Management System</font></a>
-
-
-        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" style="color: white;" href="/logout">Logout &nbsp; <i class="fas fa-sign-out-alt"></i></a>
-                </li>
-
-            </ul>
-        </div>
-    </nav>
-    <br><br>
-    <div class="wrapper">
-        <div class="sidebar">
-
-            <ul>
-                <li><a style="text-decoration:none;" href="/"><i class="fas fa-home"></i>Home</a></li>
-                <li><a style="text-decoration:none;" href="/donor/donate-blood"><i class="fas fa-hand-holding-medical"></i>Donate Blood</a></li>
-                <li><a style="text-decoration:none;" href="/donor/donation-history"><i class="fas fa-history"></i>Donation History</a></li>
-                <li><a style="text-decoration:none;" href="/donor/make-request"><i class="fas fa-sync-alt"></i>Blood Request</a></li>
-                <li><a style="text-decoration:none;" href="/donor/request-history"><i class="fas fa-history"></i>Request History</a></li>
-
-
-            </ul>
-
-        </div>-->
     <nav class="fixed top-0 left-0 w-full bg-black text-white shadow-md z-50">
         <div class="flex items-center justify-between px-6 py-3">
             <!-- Logo -->
@@ -73,23 +44,12 @@
                 <li><a class="flex items-center text-white space-x-2 hover:text-red-600 hover-handwriting text-2xl"  href="/donor/donation-history"><i class="fas fa-history"></i>Donation History</a></li>
                 <li><a class="flex items-center text-white space-x-2 hover:text-red-600 hover-handwriting text-2xl"  href="/donor/make-request"><i class="fas fa-sync-alt"></i>Blood Request</a></li>
                 <li><a class="flex items-center text-white space-x-2 hover:text-red-600 hover-handwriting text-2xl"  href="/donor/request-history"><i class="fas fa-history"></i>Request History</a></li>
-
-
             </ul>
-
         </div>
         <div class="main_content">
-
-
             {% block content %}
-
             {% endblock content %}
-
-
-
         </div>
     </div>
-
-
 </body>
 </html>
